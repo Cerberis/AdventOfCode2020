@@ -4,7 +4,7 @@ namespace AdventOfCode2020.Days
 {
     internal class Day1Part1 : Day1
     {
-       internal Day1Part1(int sumToMake) : base(sumToMake)
+        internal Day1Part1(int sumToMake) : base(sumToMake)
         {
         }
 

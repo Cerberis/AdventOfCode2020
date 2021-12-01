@@ -1,5 +1,4 @@
-﻿using CommonCode;
-using CommonCode.Extensions;
+﻿using CommonCode.Extensions;
 
 namespace AdventOfCode2020.Days
 {
