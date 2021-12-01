@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/.vs
+/AdventOfCode2020/obj
+/AdventOfCode2020/bin
