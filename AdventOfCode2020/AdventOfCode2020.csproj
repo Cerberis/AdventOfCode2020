@@ -11,4 +11,10 @@
     <ProjectReference Include="..\..\CommonCode\CommonCode\CommonCode.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Days\Day3\Part2Data.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

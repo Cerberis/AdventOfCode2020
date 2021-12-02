@@ -24,7 +24,7 @@
                     else
                         ParsedData[row][currentCol] = 'O';
                 }
-                PrintWalkedPath(ParsedData);
+                //PrintWalkedPath(ParsedData);
                 var treesEncountered = ParsedData.Sum(m => m.Count(n => n == 'X'));
                 Console.WriteLine($"RowIncrement: {RowInterval[colRowPair]}, ColIncrement: {ColInterval[colRowPair]}, Trees encountered: {treesEncountered}");
                 result *= treesEncountered;
