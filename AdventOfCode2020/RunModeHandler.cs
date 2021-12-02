@@ -218,12 +218,14 @@ namespace AdventOfCode2020
 
         private static void Day4Part1Handler()
         {
-            throw new NotImplementedException();
+            var handler = new Day4Part1(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day4\Part1Data.txt");
+            handler.Execute();
         }
 
         private static void Day4Part2Handler()
         {
-            throw new NotImplementedException();
+            var handler = new Day4Part2(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day4\Part2Data.txt");
+            handler.Execute();
         }
 
         private static void Day5Part1Handler()
