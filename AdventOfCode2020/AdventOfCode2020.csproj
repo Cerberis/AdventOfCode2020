@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Days\Day6\Part2Description.txt~RF5d1e767c.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\CommonCode\CommonCode\CommonCode.csproj" />
   </ItemGroup>
 
