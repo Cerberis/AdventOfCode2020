@@ -22,8 +22,10 @@ namespace AdventOfCode2020
                     Day2Part2Handler();
                     break;
                 case RunMode.Day3Part1:
+                    Day3Part1Handler();
                     break;
                 case RunMode.Day3Part2:
+                    Day3Part2Handler();
                     break;
                 case RunMode.Day4Part1:
                     break;
@@ -139,7 +141,6 @@ namespace AdventOfCode2020
                     break;
             }
         }
-        
 
         private static void Day1Part1Handler()
         {
@@ -162,6 +163,22 @@ namespace AdventOfCode2020
         private static void Day2Part2Handler()
         {
             var handler = new Day2Part2(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day2\Part2Data.txt");
+            handler.Execute();
+        }
+
+        private static void Day3Part1Handler()
+        {
+            var slopeColumnNumbers = new int[1] { 3 };
+            var slopeRowNumbers = new int[1] { 1 };
+            var handler = new Day3Part1(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day3\Part1Data.txt", slopeRowNumbers, slopeColumnNumbers);
+            handler.Execute();
+        }
+
+        private static void Day3Part2Handler()
+        {
+            var slopeColumnNumbers = new int[5] { 1, 3, 5, 7, 1 };
+            var slopeRowNumbers = new int[5] { 1, 1, 1, 1, 2 };
+            var handler = new Day3Part2(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day3\Part2Data.txt", slopeRowNumbers, slopeColumnNumbers);
             handler.Execute();
         }
     }
