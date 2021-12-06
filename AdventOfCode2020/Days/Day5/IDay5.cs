@@ -12,10 +12,11 @@
 
         internal abstract int Calculate();
 
-        internal void Execute()
+        internal string Execute()
         {
             var highestSeatId = Calculate();
             Console.WriteLine($"Highest seat ID: {highestSeatId}");
+            return highestSeatId.ToString();
         }
 
         internal  int CalculatedSeatId(int personsRow, int personsSeat)

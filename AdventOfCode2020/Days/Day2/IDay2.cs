@@ -13,10 +13,11 @@ namespace AdventOfCode2020.Days
             ParsedData = ReadDataIntoModel(filePath);
         }
 
-        internal void Execute()
+        internal string Execute()
         {
             var validPassowrdCount = Calculate();
             Console.WriteLine($"Valid password count: {validPassowrdCount}");
+            return validPassowrdCount.ToString();
         }
 
         internal abstract int Calculate();

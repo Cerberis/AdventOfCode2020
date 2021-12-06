@@ -1,4 +1,5 @@
-﻿using CommonCode.Extensions;
+﻿using CommonCode;
+using CommonCode.Extensions;
 
 namespace AdventOfCode2020.Days
 {
@@ -7,13 +8,13 @@ namespace AdventOfCode2020.Days
         public int SumToMake { get; set; }
         public int[] IntArray { get; set; }
 
-        public Day1(int sumToMake)
+        public Day1(string filePath, int sumToMake)
         {
+            IntArray = FileReaders.ReadDataFileAsIntArray(filePath);
             SumToMake = sumToMake;
-            IntArray = Array.Empty<int>();
         }
 
-        internal abstract void Execute();
+        internal abstract string Execute();
 
         internal int Calculate(int iterationTime)
         {

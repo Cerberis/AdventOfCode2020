@@ -14,9 +14,11 @@
             return ParsedData.Sum(m => m.Value);
         }
 
-        internal void Execute()
+        internal string Execute()
         {
-            Console.WriteLine($"Result: {Calculate()}");
+            var result = Calculate();
+            Console.WriteLine($"Result: {result}");
+            return result.ToString();
         }
 
         internal abstract Dictionary<int, int> ReadDataIntoModel(string filePath);

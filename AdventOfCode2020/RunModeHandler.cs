@@ -1,398 +1,511 @@
 ﻿using AdventOfCode2020.Days;
 using AdventOfCode2020.Enumerations;
+using System.Reflection;
 
 namespace AdventOfCode2020
 {
-    internal static class RunModeHandler
+    public static class RunModeHandler
     {
-        internal static void Execute(RunMode runMode)
+        public static string Execute(RunMode runMode)
         {
             switch (runMode)
             {
                 case RunMode.Day1Part1:
-                    Day1Part1Handler();
-                    break;
+                    {
+                        int sumToMake = 2020;
+                        return Day1Part1Handler(sumToMake);
+                    }
                 case RunMode.Day1Part2:
-                    Day1Part2Handler();
-                    break;
+                    {
+                        int sumToMake = 2020;
+                        return Day1Part2Handler(sumToMake);
+                    }
                 case RunMode.Day2Part1:
-                    Day2Part1Handler();
-                    break;
+                    return Day2Part1Handler();
                 case RunMode.Day2Part2:
-                    Day2Part2Handler();
-                    break;
+                    return Day2Part2Handler();
                 case RunMode.Day3Part1:
-                    Day3Part1Handler();
-                    break;
+                    return Day3Part1Handler();
                 case RunMode.Day3Part2:
-                    Day3Part2Handler();
-                    break;
+                    return Day3Part2Handler();
                 case RunMode.Day4Part1:
-                    Day4Part1Handler();
-                    break;
+                    return Day4Part1Handler();
                 case RunMode.Day4Part2:
-                    Day4Part2Handler();
-                    break;
+                    return Day4Part2Handler();
                 case RunMode.Day5Part1:
-                    Day5Part1Handler();
-                    break;
+                    return Day5Part1Handler();
                 case RunMode.Day5Part2:
-                    Day5Part2Handler();
-                    break;
+                    return Day5Part2Handler();
                 case RunMode.Day6Part1:
-                    Day6Part1Handler();
-                    break;
+                    return Day6Part1Handler();
                 case RunMode.Day6Part2:
-                    Day6Part2Handler();
-                    break;
+                    return Day6Part2Handler();
                 case RunMode.Day7Part1:
-                    Day7Part1Handler();
-                    break;
+                    return Day7Part1Handler();
                 case RunMode.Day7Part2:
-                    Day7Part2Handler();
-                    break;
+                    return Day7Part2Handler();
                 case RunMode.Day8Part1:
-                    Day8Part1Handler();
-                    break;
+                    return Day8Part1Handler();
                 case RunMode.Day8Part2:
-                    Day8Part2Handler();
-                    break;
+                    return Day8Part2Handler();
+                case RunMode.Day8Part3:
+                    return Day8Part3Handler();
                 case RunMode.Day9Part1:
-                    Day9Part1Handler();
-                    break;
+                    return Day9Part1Handler();
                 case RunMode.Day9Part2:
-                    Day9Part2Handler();
-                    break;
+                    return Day9Part2Handler();
                 case RunMode.Day10Part1:
-                    Day10Part1Handler();
-                    break;
+                    return Day10Part1Handler();
                 case RunMode.Day10Part2:
-                    Day10Part2Handler();
-                    break;
+                    return Day10Part2Handler();
                 case RunMode.Day11Part1:
-                    Day11Part1Handler();
-                    break;
+                    return Day11Part1Handler();
                 case RunMode.Day11Part2:
-                    Day11Part2Handler();
-                    break;
+                    return Day11Part2Handler();
                 case RunMode.Day12Part1:
-                    Day12Part1Handler();
-                    break;
+                    return Day12Part1Handler();
                 case RunMode.Day12Part2:
-                    Day12Part2Handler();
-                    break;
+                    return Day12Part2Handler();
                 case RunMode.Day13Part1:
-                    Day13Part1Handler();
-                    break;
+                    return Day13Part1Handler();
                 case RunMode.Day13Part2:
-                    Day13Part2Handler();
-                    break;
+                    return Day13Part2Handler();
                 case RunMode.Day14Part1:
-                    Day14Part1Handler();
-                    break;
+                    return Day14Part1Handler();
                 case RunMode.Day14Part2:
-                    Day14Part2Handler();
-                    break;
+                    return Day14Part2Handler();
                 case RunMode.Day15Part1:
-                    Day15Part1Handler();
-                    break;
+                    return Day15Part1Handler();
                 case RunMode.Day15Part2:
-                    Day15Part2Handler();
-                    break;
+                    return Day15Part2Handler();
                 case RunMode.Day16Part1:
-                    Day16Part1Handler();
-                    break;
+                    return Day16Part1Handler();
                 case RunMode.Day16Part2:
-                    Day16Part2Handler();
-                    break;
+                    return Day16Part2Handler();
                 case RunMode.Day17Part1:
-                    Day17Part1Handler();
-                    break;
+                    return Day17Part1Handler();
                 case RunMode.Day17Part2:
-                    Day17Part2Handler();
-                    break;
+                    return Day17Part2Handler();
                 case RunMode.Day18Part1:
-                    Day18Part1Handler();
-                    break;
+                    return Day18Part1Handler();
                 case RunMode.Day18Part2:
-                    Day18Part2Handler();
-                    break;
+                    return Day18Part2Handler();
                 case RunMode.Day19Part1:
-                    Day19Part1Handler();
-                    break;
+                    return Day19Part1Handler();
                 case RunMode.Day19Part2:
-                    Day19Part2Handler();
-                    break;
+                    return Day19Part2Handler();
                 case RunMode.Day20Part1:
-                    Day20Part1Handler();
-                    break;
+                    return Day20Part1Handler();
                 case RunMode.Day20Part2:
-                    Day20Part2Handler();
-                    break;
+                    return Day20Part2Handler();
                 case RunMode.Day21Part1:
-                    break;
+                    return Day21Part1Handler();
                 case RunMode.Day21Part2:
-                    break;
+                    return Day21Part2Handler();
                 case RunMode.Day22Part1:
-                    break;
+                    return Day22Part1Handler();
                 case RunMode.Day22Part2:
-                    break;
+                    return Day22Part2Handler();
                 case RunMode.Day23Part1:
-                    break;
+                    return Day23Part1Handler();
                 case RunMode.Day23Part2:
-                    break;
+                    return Day23Part2Handler();
                 case RunMode.Day24Part1:
-                    break;
+                    return Day24Part1Handler();
                 case RunMode.Day24Part2:
-                    break;
+                    return Day24Part2Handler();
                 case RunMode.Day25Part1:
-                    break;
+                    return Day25Part1Handler();
                 case RunMode.Day25Part2:
-                    break;
+                    return Day25Part2Handler();
                 case RunMode.Day26Part1:
-                    break;
+                    return Day26Part1Handler();
                 case RunMode.Day26Part2:
-                    break;
+                    return Day26Part2Handler();
                 case RunMode.Day27Part1:
-                    break;
+                    return Day27Part1Handler();
                 case RunMode.Day27Part2:
-                    break;
+                    return Day27Part2Handler();
                 case RunMode.Day28Part1:
-                    break;
+                    return Day28Part1Handler();
                 case RunMode.Day28Part2:
-                    break;
+                    return Day28Part2Handler();
                 case RunMode.Day29Part1:
-                    break;
+                    return Day29Part1Handler();
                 case RunMode.Day29Part2:
-                    break;
+                    return Day29Part2Handler();
                 case RunMode.Day30Part1:
-                    break;
+                    return Day30Part1Handler();
                 case RunMode.Day30Part2:
-                    break;
+                    return Day30Part2Handler();
                 case RunMode.Day31Part1:
-                    break;
+                    return Day31Part1Handler();
                 case RunMode.Day31Part2:
-                    break;
+                    return Day31Part2Handler();
+
+
             }
+            return "Nothing happened";
         }
 
-        private static void Day1Part1Handler()
+      
+        private static string Day1Part1Handler(int sumToMake)
         {
-            var handler = new Day1Part1(2020);
-            handler.Execute();
+            string path = GetPath(@"Days\Day1\Data.txt");
+            var handler = new Day1Part1(path, sumToMake);
+            return handler.Execute();
         }
 
-        private static void Day1Part2Handler()
+        private static string Day1Part2Handler(int sumToMake)
         {
-            var handler = new Day1Part2(2020);
-            handler.Execute();
+            string path = GetPath(@"Days\Day1\Data.txt");
+            var handler = new Day1Part2(path, sumToMake);
+            return handler.Execute();
         }
 
-        private static void Day2Part1Handler()
+        private static string Day2Part1Handler()
         {
-            var handler = new Day2Part1(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day2\Part1Data.txt");
-            handler.Execute();
+            string path = GetPath(@"Days\Day2\Data.txt");
+            var handler = new Day2Part1(path);
+            return handler.Execute();
         }
 
-        private static void Day2Part2Handler()
+        private static string Day2Part2Handler()
         {
-            var handler = new Day2Part2(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day2\Part2Data.txt");
-            handler.Execute();
+            string path = GetPath(@"Days\Day2\Data.txt");
+            var handler = new Day2Part2(path);
+            return handler.Execute();
         }
 
-        private static void Day3Part1Handler()
+        private static string Day3Part1Handler()
         {
             var slopeColumnNumbers = new int[1] { 3 };
             var slopeRowNumbers = new int[1] { 1 };
-            var handler = new Day3Part1(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day3\Part1Data.txt", slopeRowNumbers, slopeColumnNumbers);
-            handler.Execute();
+            string path = GetPath(@"Days\Day3\Data.txt");
+            var handler = new Day3Part1(path, slopeRowNumbers, slopeColumnNumbers);
+            return handler.Execute();
         }
 
-        private static void Day3Part2Handler()
+        private static string Day3Part2Handler()
         {
             var slopeColumnNumbers = new int[5] { 1, 3, 5, 7, 1 };
             var slopeRowNumbers = new int[5] { 1, 1, 1, 1, 2 };
-            var handler = new Day3Part2(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day3\Part2Data.txt", slopeRowNumbers, slopeColumnNumbers);
-            handler.Execute();
+            string path = GetPath(@"Days\Day3\Data.txt");
+            var handler = new Day3Part2(path, slopeRowNumbers, slopeColumnNumbers);
+            return handler.Execute();
         }
 
-        private static void Day4Part1Handler()
+        private static string Day4Part1Handler()
         {
-            var handler = new Day4Part1(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day4\Part1Data.txt");
-            handler.Execute();
+            string path = GetPath(@"Days\Day4\Data.txt");
+            var handler = new Day4Part1(path);
+            return handler.Execute();
         }
 
-        private static void Day4Part2Handler()
+        private static string Day4Part2Handler()
         {
-            var handler = new Day4Part2(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day4\Part2Data.txt");
-            handler.Execute();
+            string path = GetPath(@"Days\Day4\Data.txt");
+            var handler = new Day4Part2(path);
+            return handler.Execute();
         }
 
-        private static void Day5Part1Handler()
+        private static string Day5Part1Handler()
         {
-            var handler = new Day5Part1(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day5\Data.txt");
-            handler.Execute();
+            string path = GetPath(@"Days\Day5\Data.txt");
+            var handler = new Day5Part1(path);
+            return handler.Execute();
         }
 
-        private static void Day5Part2Handler()
+        private static string Day5Part2Handler()
         {
-            var handler = new Day5Part2(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day5\Data.txt");
-            handler.Execute(); 
+            string path = GetPath(@"Days\Day5\Data.txt");
+            var handler = new Day5Part2(path);
+            return handler.Execute();
         }
 
-        private static void Day6Part1Handler()
+        private static string Day6Part1Handler()
         {
-            var handler = new Day6Part1(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day6\Data.txt");
-            handler.Execute();
+            string path = GetPath(@"Days\Day6\Data.txt");
+            var handler = new Day6Part1(path);
+            return handler.Execute();
         }
 
-        private static void Day6Part2Handler()
+        private static string Day6Part2Handler()
         {
-            var handler = new Day6Part2(@"D:\Projektai\AdventOfCode2020\AdventOfCode2020\Days\Day6\Data.txt");
-            handler.Execute();
+            string path = GetPath(@"Days\Day6\Data.txt");
+            var handler = new Day6Part2(path);
+            return handler.Execute();
         }
 
-
-      
-
-        private static void Day7Part1Handler()
+        private static string Day7Part1Handler()
         {
-            throw new NotImplementedException();
+            string path = GetPath(@"Days\Day7\Data.txt");
+            var handler = new Day7Part1(path);
+            return handler.Execute();
         }
 
-        private static void Day7Part2Handler()
+        private static string Day7Part2Handler()
         {
-            throw new NotImplementedException();
+            string path = GetPath(@"Days\Day7\Data.txt");
+            var handler = new Day7Part2(path);
+            return handler.Execute();
         }
 
-        private static void Day8Part1Handler()
+        private static string Day8Part1Handler()
         {
-            throw new NotImplementedException();
+            string path = GetPath(@"Days\Day8\Data.txt");
+            var handler = new Day8Part1(path);
+            return handler.Execute();
         }
 
-        private static void Day8Part2Handler()
+        private static string Day8Part2Handler()
         {
-            throw new NotImplementedException();
+            string path = GetPath(@"Days\Day8\Data.txt");
+            var handler = new Day8Part2(path);
+            return handler.Execute();
         }
 
-        private static void Day9Part1Handler()
+        private static string Day8Part3Handler()
         {
-            throw new NotImplementedException();
+            string path = GetPath(@"Days\Day8\Data.txt");
+            var handler = new Day8Part3(path);
+            return handler.Execute();
         }
 
-        private static void Day9Part2Handler()
-        {
-            throw new NotImplementedException();
-        }
 
-        private static void Day10Part1Handler()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Day10Part2Handler()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Day11Part1Handler()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Day11Part2Handler()
+        private static string Day9Part1Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day12Part1Handler()
+        private static string Day9Part2Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day12Part2Handler()
+        private static string Day10Part1Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day13Part1Handler()
+        private static string Day10Part2Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day13Part2Handler()
+        private static string Day11Part1Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day14Part1Handler()
+        private static string Day11Part2Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day14Part2Handler()
+        private static string Day12Part1Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day15Part1Handler()
+        private static string Day12Part2Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day15Part2Handler()
+        private static string Day13Part1Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day16Part1Handler()
+        private static string Day13Part2Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day16Part2Handler()
+        private static string Day14Part1Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day17Part1Handler()
+        private static string Day14Part2Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day17Part2Handler()
+        private static string Day15Part1Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day18Part1Handler()
+        private static string Day15Part2Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day18Part2Handler()
+        private static string Day16Part1Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day19Part1Handler()
+        private static string Day16Part2Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day19Part2Handler()
+        private static string Day17Part1Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day20Part1Handler()
+        private static string Day17Part2Handler()
         {
             throw new NotImplementedException();
         }
 
-        private static void Day20Part2Handler()
+        private static string Day18Part1Handler()
         {
             throw new NotImplementedException();
+        }
+
+        private static string Day18Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day19Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day19Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day20Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day20Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day21Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day21Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day22Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day22Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day23Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day23Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day24Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day24Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day25Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day25Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day26Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day26Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day27Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day27Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day28Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day28Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day29Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day29Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day30Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day30Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day31Part1Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string Day31Part2Handler()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string GetPath(string fileLocationInBin)
+        {
+            return Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), fileLocationInBin);
         }
     }
 }

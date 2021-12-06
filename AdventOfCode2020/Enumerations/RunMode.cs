@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode2020.Enumerations
 {
-    internal enum RunMode
+    public enum RunMode
     {
         Day1Part1,
         Day1Part2,
@@ -63,6 +63,8 @@
         Day30Part1,
         Day30Part2,
         Day31Part1,
-        Day31Part2
+        Day31Part2,
+
+        Day8Part3
     }
 }

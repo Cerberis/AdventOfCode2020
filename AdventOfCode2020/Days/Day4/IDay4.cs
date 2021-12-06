@@ -9,10 +9,11 @@
             ParsedData = ReadDataIntoModel(filePath);
         }
 
-        internal void Execute()
+        internal string Execute()
         {
             var validPassports = Calculate();
             Console.WriteLine($"Valid passports: {validPassports}");
+            return validPassports.ToString();
         }
 
         internal abstract int Calculate();

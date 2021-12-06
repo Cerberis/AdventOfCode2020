@@ -13,10 +13,11 @@
             ColInterval = colInterval;
         }
 
-        internal void Execute()
+        internal string Execute()
         {
             var treesEncountered = Calculate();
             Console.WriteLine($"Trees encountered: {treesEncountered}");
+            return treesEncountered.ToString();
         }
 
        internal abstract int Calculate();
